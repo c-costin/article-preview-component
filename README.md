@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repo Github](https://github.com/c-costin/article-preview-component)
-- Live Site URL: [Live Website](https://your-live-site-url.com)
+- Live Site URL: [Live Website](https://c-costin.github.io/article-preview-component/)
 
 ## My process
 
