@@ -1,0 +1,212 @@
+/* ==== FONTS ==== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* ==== GLOBAL VARIABLE ==== */
+:root {
+    /* Colors */
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desatured-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(210, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/* ==== RESET ==== */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==== STYLE ==== */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+.card {
+    margin-block: 64px;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.09);
+}
+
+.card_thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px 8px 0 0;
+}
+
+.card_context {
+    padding: 32px;
+    background-color: white;
+}
+
+.card__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+}
+
+.card__description {
+    color: var(--desatured-dark-blue);
+}
+
+.card_reference {
+    position: relative;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: centers;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
+}
+
+.card__legend {
+    display: flex;
+}
+
+.card__avatar {
+    margin-right: 16px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+.card__legend_name {
+    color: var(--very-dark-grayish-blue);
+
+}
+
+.card__legend_date {
+    color: var(--desatured-dark-blue);
+}
+
+.card__btnShare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-position: center;
+    z-index: 50;
+    width: 32px;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--light-grayish-blue);
+}
+
+.card__btnShare:hover {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.card__btnShare:hover svg path {
+    fill: white;
+}
+
+.card__btnShare.active {
+    background-color: var(--desatured-dark-blue);
+}
+
+.card__btnShare.active svg path {
+    fill: white;
+}
+
+.card__socials {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    gap: 24px;
+    padding-inline: 32px;
+
+    border-radius: 0 0 8px 8px;
+    align-items: center;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.card__social_text {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--desatured-dark-blue);
+}
+
+.card__social_icon {
+    width: 12px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ==== REFERENCE STYLE ==== */
+.attribution {
+    margin-top: 96px;
+    margin-inline: auto;
+    padding-block: 8px;
+    padding-inline: 12px;
+    width: fit-content;
+    border-radius: 8px;
+    background: white;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 5%, 25%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ==== RESPONSIVE ==== */
+
+@media screen and (min-width: 992px) {
+    .card {
+        position: relative;
+        margin-inline: auto;
+        display: flex;
+        width: 648px;
+        height: fit-content;
+        border-radius: 8px;
+    }
+
+    .card_thumbnail {
+        object-fit: cover;
+        object-position: left;
+        width: 220px;
+        aspect-ratio: none;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .card_reference {
+        position: unset;
+        padding-top: 0;
+    }
+
+    .card__socials {
+        z-index: 20;
+        border-radius: 8px;
+        width: fit-content;
+        height: fit-content;
+        padding-inline: 38px;
+        padding-block: 12px;
+        top: 47%;
+        left: 75%;
+    }
+
+    .card__socials::after {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 12px;
+        top: 95%;
+        left: 47%;
+        background-color: var(--very-dark-grayish-blue);
+        clip-path: polygon(50% 100%, 0 0, 100% 0)
+    }
+}
