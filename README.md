@@ -26,15 +26,21 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop version :
-![](./screenshots/desktop1440.png)
+![](./screenshots/desktop.png)
+
+#### Desktop version - Active :
+![](./screenshots/desktopActive.png)
 
 #### Mobile version :
-![](./screenshots/mobile375.png)
+![](./screenshots/mobile.png)
+
+#### Mobile version - Active:
+![](./screenshots/mobileActive.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo Github](https://github.com/c-costin/article-preview-component)
+- Live Site URL: [Live Website](https://your-live-site-url.com)
 
 ## My process
 
@@ -54,5 +60,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Costin Cadeau](https://costincadeau.fr)
+- Website - [costincadeau.fr](https://costincadeau.fr)
 - Frontend Mentor - [@c-costin](https://www.frontendmentor.io/profile/c-costin)
